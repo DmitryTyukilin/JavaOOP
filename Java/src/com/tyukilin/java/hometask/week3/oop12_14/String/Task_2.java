@@ -20,19 +20,20 @@ public class Task_2 {
         System.out.println(result);
     }
 
-    public static int[] stringInArrayValue(String vrt) {
-        int[] num = new int[vrt.length()];
-        for (int i = 0; i < vrt.length(); i++) {
-            if (48 <= vrt.charAt(i) && vrt.charAt(i) <= 57) {
-                num[i] = vrt.charAt(i) - '0';
+    public static int[] stringInArrayValue(String string) {
+        int[] num = new int[string.length()];
+        for (int i = 0; i < string.length(); i++) {
+            if (48 <= string.charAt(i) && string.charAt(i) <= 57) {
+                num[i] = string.charAt(i) - '0';
             }
         }
         return num;
     }
-    public static int sumValueOfArray(int[] num) {
+
+    public static int sumValueOfArray(int[] array) {
         int result = 0;
-        for(int a : num) {
-            result += a;
+        for (int element : array) {
+            result += element;
         }
         return result;
     }
