@@ -16,7 +16,6 @@ public class HouseBuild {
         Floor[] floors = {floorOne, floorTwo};
         House house = new House(1, floors);
         printAllInformation(house);
-
     }
 
     public static void printAllInformation(House house) {

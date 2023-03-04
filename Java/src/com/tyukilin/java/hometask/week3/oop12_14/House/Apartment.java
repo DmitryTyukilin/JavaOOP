@@ -10,17 +10,15 @@ public class Apartment {
     }
 
     public int getNumber() {
-
         return this.number;
     }
 
     public Room[] getRooms() {
-
         return this.rooms;
     }
-    public void printInfo () {
+
+    public void printInfo() {
         System.out.println("Квартира №: " + getNumber() + " количество комнат " + getRooms().length);
     }
-
 }
 
